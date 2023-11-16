@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="boxLocalizacion">
+    <ion-card>
+      <ion-grid>
+        <ion-row>
+          <ion-col id="btnLocalizacion" size="2">
+            <ion-button size="small" (click)="localizacion()"><ion-icon name="location"></ion-icon></ion-button>
+          </ion-col>
+          <ion-col id="itemLong" size="4">
+            <ion-item *ngIf="coordinates">
+              <h1 style="font-size: 90%;" slot="end"><small>Lat: {{ coordinates.coords.latitude }}</small></h1> 
+            </ion-item>
+          </ion-col>
+          <ion-col id="itemLat" size="4">
+            <ion-item *ngIf="coordinates">
+              <h1 style="font-size: 90%;" slot="end"><small>Long: {{ coordinates.coords.longitude }}</small></h1>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-button (click)="tomarFoto()">Tomar Foto</ion-button>
+            </ion-item>
+            <ion-item>
+              <ion-button (click)="scan()">Intento de scaner</ion-button>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </div>
+</ion-content>

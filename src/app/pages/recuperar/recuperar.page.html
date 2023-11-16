@@ -1,0 +1,16 @@
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-content>
+      <ion-icon name="lock-closed-outline"></ion-icon>
+      <h1>Te olvidaste tu Contraseña?</h1>
+      <p>¡No te preocupes! escribe un email existente y recibe instrucciones para recuperarla.</p>
+
+      <ion-item>
+        <ion-input [(ngModel)]="userEmail" name="userEmail" label="Correo:" labelPlacement="floating"></ion-input>
+      </ion-item>
+
+      <ion-button (click)="enviCorr()" expand="block" color="success">Confirmar</ion-button>
+      <h4 (click)="login()">volver al inicio de Sesión</h4>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

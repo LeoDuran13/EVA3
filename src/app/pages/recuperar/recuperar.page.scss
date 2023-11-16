@@ -1,0 +1,64 @@
+ion-card{
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+ion-card-content{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ion-icon{
+    font-size: 130px;
+    padding-left: 105px;
+    margin-top: 110px;
+    margin-bottom: 30px;
+    color: rgb(96, 188, 89);
+}
+
+ion-button{
+    margin-top: 40px;
+}
+
+ion-input{
+    margin-top: 20px;
+}
+
+ion-title{
+    text-align: center;
+    color: white;
+}
+
+ion-back-button{
+    color: rgb(6, 6, 6);
+}
+
+.tolBar{
+    --ion-background-color: var(--ion-color-success);
+    
+}
+
+h1{
+    text-align: center;
+    color: black;
+}
+
+p{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+h4{
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 145px;
+}
+
+h4:hover{
+    color: rgb(43, 220, 16);
+}
